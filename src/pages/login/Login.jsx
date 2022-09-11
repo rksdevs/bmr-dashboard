@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault();
     adminContextDispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("/auth/login", credentials);
+      const res = await axios.post("/api/auth/login", credentials);
       if (res.data.isAdmin) {
         adminContextDispatch({ type: "LOGIN_SUCCESS", payload: res.data });
 

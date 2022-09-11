@@ -1,7 +1,5 @@
 import "./widget.scss";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import { useState } from "react";
@@ -12,7 +10,7 @@ import { Link } from "react-router-dom";
 const Widget = ({ type }) => {
   const [count, setCount] = useState([]);
 
-  const dataSetsUrls = ["/users", "/hotels", "/rooms"];
+  const dataSetsUrls = ["/api/users", "/api/hotels", "/api/rooms"];
   let data;
 
   switch (type) {

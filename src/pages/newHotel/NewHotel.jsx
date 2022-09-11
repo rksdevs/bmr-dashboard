@@ -54,7 +54,7 @@ const NewHotel = () => {
         photos: list,
       };
 
-      await axios.post("/hotels", newhotel);
+      await axios.post("/api/hotels", newhotel);
       navigate("/hotels");
     } catch (err) {
       console.log(err);
